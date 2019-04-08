@@ -15,8 +15,7 @@ function bindSlideToggle(trigger, boxBody, content, openClass) {
     button.element.addEventListener('click', () => {
         if (button.active === false) { // Проверка меню на неактивность
             button.active = true; // если неактив то делаем актив
-            box.style.height = boxContent.clientHeight + 'px'; // - почему-то не работает
-            //box.style.height = 30 + 'px';
+            box.style.height = boxContent.clientHeight + 'px';
             box.classList.add(openClass);
         } else {
             button.active = false;
