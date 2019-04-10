@@ -94,6 +94,10 @@ more.addEventListener('click', () => {
                 ${data[2][i]}
             </div>
         `;
+        //fix "Night mode" for new videos
+        if(night === true) {
+            card.style.color='#fff';
+        }
         videosWrapper.appendChild(card);
         setTimeout(() => {
             card.classList.remove( 'videos__item-active');
